@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  web:
+    image: unkn0wn93/simple-web-server:latest
+    ports:
+      - "8888:8888"
+    user: "1000:1000"
+    environment:
+      SERVER_HOST: "0.0.0.0"
+      SERVER_PORT: 8888
+    command: ["pipenv", "run", "python", "simple_web_service.py"]
