@@ -5,7 +5,7 @@ services:
     build:
       context: .
     ports:
-      - "``````````:8888"
+      - "80:8888"
     user: "1000:1000"
     environment:
       SERVER_HOST: "0.0.0.0"
